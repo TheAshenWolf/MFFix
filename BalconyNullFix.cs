@@ -11,7 +11,7 @@ public class BalconyNullFix
     [HarmonyPrefix]
     public static bool DisconnectBalconies(BalconyChanger __instance)
     {
-        MFFix.Log("DisconnectBalconies() called");
+        MFFix.Log("Running patched version of DisconnectBalconies()");
         
         GameObject[] balconyArray = Traverse.Create(__instance).Field("_balconyArray").GetValue<GameObject[]>();
         foreach (GameObject balcony in balconyArray)
