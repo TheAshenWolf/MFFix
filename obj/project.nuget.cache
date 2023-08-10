@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "l0Tar8zFX/tkUEEB6q6v67wNoInG6rAbaG/e7KDFILlFBASKpPV4ghQDJtQl4N2rCkFAesPkmHiwxGr3PehFgg==",
+  "dgSpecHash": "hEHyrUf87g7r4DoDz+Terg0F7Ft3IrFiAGCrJJDv59JxzepJRjRz0eNYvGpUx8QuwkqxXGVnm0BuFCBoz7GHxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jiri.sretr\\Desktop\\MonsterFactory\\MFFix\\MFFix.csproj",
+  "projectFilePath": "C:\\UnityProjects\\MFFix\\MFFix.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\bepinex.core\\5.4.21\\bepinex.core.5.4.21.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\bepinex.plugininfoprops\\1.1.0\\bepinex.plugininfoprops.1.1.0.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\harmonyx\\2.7.0\\harmonyx.2.7.0.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.2\\microsoft.netframework.referenceassemblies.net46.1.0.2.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\monomod.runtimedetour\\21.12.13.1\\monomod.runtimedetour.21.12.13.1.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\monomod.utils\\21.12.13.1\\monomod.utils.21.12.13.1.nupkg.sha512",
-    "C:\\Users\\jiri.sretr\\.nuget\\packages\\unityengine.modules\\2021.3.13\\unityengine.modules.2021.3.13.nupkg.sha512"
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\bepinex.core\\5.4.21\\bepinex.core.5.4.21.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\bepinex.plugininfoprops\\1.1.0\\bepinex.plugininfoprops.1.1.0.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\harmonyx\\2.7.0\\harmonyx.2.7.0.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.2\\microsoft.netframework.referenceassemblies.net46.1.0.2.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\monomod.runtimedetour\\21.12.13.1\\monomod.runtimedetour.21.12.13.1.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\monomod.utils\\21.12.13.1\\monomod.utils.21.12.13.1.nupkg.sha512",
+    "C:\\Users\\TheAshenWolf\\.nuget\\packages\\unityengine.modules\\2021.3.13\\unityengine.modules.2021.3.13.nupkg.sha512"
   ],
   "logs": []
 }
