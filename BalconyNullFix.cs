@@ -1,24 +1,28 @@
-using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
-using Logger = BepInEx.Logging.Logger;
 
-namespace MFFix;
-
-[HarmonyPatch(typeof(BalconyChanger)), HarmonyPatch(nameof(BalconyChanger.DisconnectBalconies))]
-public class BalconyNullFix
+namespace MFFix
 {
-    [HarmonyPrefix]
-    public static bool DisconnectBalconies(BalconyChanger __instance)
+    [HarmonyPatch(typeof(BalconyChanger)), HarmonyPatch(nameof(BalconyChanger.DisconnectBalconies))]
+    public class BalconyNullFix
     {
-        MFFix.Log("Running patched version of DisconnectBalconies()");
-        
-        GameObject[] balconyArray = Traverse.Create(__instance).Field("_balconyArray").GetValue<GameObject[]>();
-        foreach (GameObject balcony in balconyArray)
+        /// <summary>
+        /// Rewrite of the DisconnectBalconies() method to prevent null reference exceptions.
+        /// </summary>
+        /// <param name="__instance">Instance of <see cref="BalconyChanger"/> provided by Harmony</param>
+        /// <returns>False - in order to block the original code from executing.</returns>
+        [HarmonyPrefix]
+        public static bool DisconnectBalconies(BalconyChanger __instance)
         {
-            if (balcony != null) balcony.AddComponent<Rigidbody>();
-        }
+            MFFix.Log("Running patched version of DisconnectBalconies()");
+        
+            GameObject[] balconyArray = Traverse.Create(__instance).Field("_balconyArray").GetValue<GameObject[]>();
+            foreach (GameObject balcony in balconyArray)
+            {
+                if (balcony != null) balcony.AddComponent<Rigidbody>();
+            }
 
-        return false;
+            return false;
+        }
     }
 }

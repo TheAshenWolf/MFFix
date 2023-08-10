@@ -7,13 +7,13 @@ namespace MFFix
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     public class MFFix : BaseUnityPlugin
     {
-        public static ManualLogSource mfFixLogger = BepInEx.Logging.Logger.CreateLogSource("MFFix");
-
-        public static bool enableLog = true;
+        // TODO: Possibly move those into a config file?
+        private static readonly ManualLogSource _mfFixLogger = BepInEx.Logging.Logger.CreateLogSource("MFFix");
+        private const bool ENABLE_LOG = true;
 
         public static void Log(string message)
         {
-            if (enableLog) mfFixLogger.LogInfo(message);
+            if (ENABLE_LOG) _mfFixLogger.LogInfo(message);
         }
 
 
