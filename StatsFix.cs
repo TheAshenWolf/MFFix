@@ -7,15 +7,16 @@ namespace MFFix
   public class StatsFix
   {
     /// <summary>
-    /// Literally the only thing this does is prevent the original code from running.
     /// Fixes the issue with score being added twice.
     /// </summary>
     [HarmonyPrefix]
     public static bool SavePlayTime(object sender, EventArgs e, CanvasController __instance)
     {
-      // Should run the LegacyStatsText();
+      // Runs the LegacyStatsText(); - this method is responsible for drawing the score on the screen.
+      // This method was apparently never rewritten.
       Traverse.Create(__instance).Method("LegacyStatsText").GetValue();
       
+      // Literally the only thing this does is prevent the original code from running.
       return false;
     }
   }
