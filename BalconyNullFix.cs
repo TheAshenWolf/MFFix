@@ -12,7 +12,7 @@ namespace MFFix
         /// <param name="__instance">Instance of <see cref="BalconyChanger"/> provided by Harmony</param>
         /// <returns>False - in order to block the original code from executing.</returns>
         [HarmonyPrefix]
-        public static bool DisconnectBalconies(BalconyChanger __instance)
+        public static bool Prefix(BalconyChanger __instance)
         {
             MFFix.Log("Running patched version of DisconnectBalconies()");
         

@@ -10,7 +10,7 @@ namespace MFFix
     /// Fixes the issue with score being added twice.
     /// </summary>
     [HarmonyPrefix]
-    public static bool SavePlayTime(object sender, EventArgs e, CanvasController __instance)
+    public static bool Prefix(object sender, EventArgs e, CanvasController __instance)
     {
       // Runs the LegacyStatsText(); - this method is responsible for drawing the score on the screen.
       // This method was apparently never rewritten.

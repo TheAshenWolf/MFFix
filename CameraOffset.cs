@@ -14,7 +14,7 @@ namespace MFFix
     /// </summary>
     /// <param name="__instance">Instance of <see cref="GameMananger"/> provided by Harmony</param>
     [HarmonyPostfix]
-    public static void LevelUpOffset(GameMananger __instance)
+    public static void Postfix(GameMananger __instance)
     {
       MFFix.Log("Increasing camera FOV to 60.");
 
